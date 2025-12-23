@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Díaz Cardeilhac | Ingeniería + Arquitectura</title>
+  <meta name="description" content="Estudio de Ingeniería + Arquitectura. 25 años de experiencia en proyectos residenciales y comerciales." />
+
+  <!-- Tipografías (podés cambiarlas después) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Skip link accesibilidad -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <!-- PONÉ TU LOGO EN assets/logo.png -->
+        <img class="brand__logo" src="assets/logo.png" alt="Díaz Cardeilhac" />
+        <div class="brand__text">
+          <span class="brand__name">Díaz Cardeilhac</span>
+          <span class="brand__tag">Ingeniería + Arquitectura</span>
+        </div>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#estudio">Estudio</a>
+        <a href="#clientes">Clientes</a>
+        <a class="nav__cta" href="#contacto">Contactar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Estudio de Ingeniería + Arquitectura</p>
+          <h1 class="hero__title">
+            Proyectos residenciales y comerciales con <span class="accent">25 años</span> de experiencia.
+          </h1>
+          <p class="hero__lead">
+            Diseño, documentación y dirección de obra. Enfoque técnico, ejecución prolija y acompañamiento
+            de punta a punta.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contacto">Solicitar presupuesto</a>
+            <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta__item">
+              <span class="meta__kpi">+25</span>
+              <span class="meta__label">años</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__kpi">Residencial</span>
+              <span class="meta__label">casas &amp; reformas</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__kpi">Comercial</span>
+              <span class="meta__label">locales &amp; obra</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder visual sin fotos -->
+        <div class="hero__panel" aria-hidden="true">
+          <div class="panel__card">
+            <div class="panel__line"></div>
+            <div class="panel__block"></div>
+            <div class="panel__block panel__block--short"></div>
+            <div class="panel__chips">
+              <span>Proyecto</span>
+              <span>Dirección</span>
+              <span>Obra</span>
+            </div>
+          </div>
+          <div class="panel__card panel__card--ghost">
+            <div class="panel__block"></div>
+            <div class="panel__block panel__block--short"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Servicios</h2>
+          <p class="section__subtitle">Lo esencial, explicado claro: qué hacemos y cómo lo hacemos.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Anteproyecto</h3>
+            <p>Relevamiento, propuesta de diseño, alternativas y estimación general de costos.</p>
+          </article>
+
+          <article class="card">
+            <h3>Proyecto ejecutivo</h3>
+            <p>Documentación técnica, planos, cómputos y definición de materiales/terminaciones.</p>
+          </article>
+
+          <article class="card">
+            <h3>Dirección de obra</h3>
+            <p>Seguimiento, coordinación, control de calidad y avance con reportes periódicos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS (sin fotos por ahora) -->
+    <section id="proyectos" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Proyectos</h2>
+          <p class="section__subtitle">
+            Vamos a cargar fotos después. Por ahora dejamos la estructura lista.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="project">
+            <div class="project__badge">Residencial</div>
+            <h3 class="project__title">Casa — (placeholder)</h3>
+            <p class="project__desc">Diseño + documentación + dirección de obra.</p>
+            <div class="project__meta">
+              <span>Año: —</span>
+              <span>Ubicación: —</span>
+            </div>
+            <a class="project__link" href="#contacto">Consultar</a>
+          </article>
+
+          <article class="project">
+            <div class="project__badge">Comercial</div>
+            <h3 class="project__title">Local — (placeholder)</h3>
+            <p class="project__desc">Ejecución y coordinación de obra en tiempos exigentes.</p>
+            <div class="project__meta">
+              <span>Año: —</span>
+              <span>Ubicación: —</span>
+            </div>
+            <a class="project__link" href="#contacto">Consultar</a>
+          </article>
+
+          <article class="project">
+            <div class="project__badge">Remodelación</div>
+            <h3 class="project__title">Reforma — (placeholder)</h3>
+            <p class="project__desc">Optimización de espacios, materiales y terminaciones.</p>
+            <div class="project__meta">
+              <span>Año: —</span>
+              <span>Ubicación: —</span>
+            </div>
+            <a class="project__link" href="#contacto">Consultar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section id="estudio" class="section">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 class="section__title">Estudio</h2>
+            <p class="muted">
+              Somos un estudio con más de 25 años de experiencia en obras residenciales y comerciales.
+              Priorizamos la claridad técnica, el control de ejecución y la comunicación con el cliente.
+            </p>
+            <ul class="list">
+              <li>Planificación y control de obra</li>
+              <li>Documentación técnica completa</li>
+              <li>Gestión de tiempos y proveedores</li>
+            </ul>
+          </div>
+
+          <div class="quote">
+            <p>
+              “Una obra bien dirigida se nota en lo que no se ve: detalles, coordinación y decisiones a tiempo.”
+            </p>
+            <span class="quote__sig">Díaz Cardeilhac — Ingeniería + Arquitectura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section id="clientes" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Clientes</h2>
+          <p class="section__subtitle">Cuando quieras, acá metemos logos y casos. Por ahora, placeholders.</p>
+        </div>
+
+        <div class="logos">
+          <div class="logo-pill">Starbucks (placeholder)</div>
+          <div class="logo-pill">Peñón del Águila (placeholder)</div>
+          <div class="logo-pill">Obras residenciales</div>
+          <div class="logo-pill">Obras comerciales</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Contacto</h2>
+          <p class="section__subtitle">Dejá tu consulta y te respondemos a la brevedad.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card">
+            <h3>Escribinos</h3>
+            <p class="muted">WhatsApp recomendado para consultas rápidas.</p>
+
+            <!-- Cambiá el número cuando lo tengas -->
+            <a class="btn btn--primary btn--full"
+               href="https://wa.me/5490000000000?text=Hola%20D%C3%ADaz%20Cardeilhac,%20quiero%20hacer%20una%20consulta%20por%20un%20proyecto."
+               target="_blank" rel="noopener">
+              WhatsApp
+            </a>
+
+            <!-- Cambiá mail cuando lo tengas -->
+            <a class="btn btn--ghost btn--full" href="mailto:contacto@diazcardeilhac.com">
+              Enviar email
+            </a>
+
+            <p class="small muted">
+              Instagram: <a href="https://www.instagram.com/diazcardeilhac_arq.obras/" target="_blank" rel="noopener">
+                @diazcardeilhac_arq.obras
+              </a>
+            </p>
+          </div>
+
+          <form class="contact__form" onsubmit="return false;">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
+            </div>
+
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" placeholder="Tu número" />
+            </div>
+
+            <div class="field">
+              <label for="zona">Zona / Ciudad</label>
+              <input id="zona" name="zona" type="text" placeholder="Ej: Córdoba Capital" />
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Qué necesitás</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos brevemente el proyecto..."></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="button" data-copy-message>
+              Copiar mensaje para WhatsApp
+            </button>
+            <p class="small muted">Esto copia el texto armado. Después lo pegás en WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Díaz Cardeilhac — Ingeniería + Arquitectura</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
