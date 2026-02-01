@@ -6,7 +6,6 @@
   <title>Díaz Cardeilhac | Ingeniería + Arquitectura</title>
   <meta name="description" content="Estudio de Ingeniería + Arquitectura. 25 años de experiencia en proyectos residenciales y comerciales." />
 
-  <!-- Tipografías (podés cambiarlas después) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,13 +17,11 @@
 </head>
 
 <body>
-  <!-- Skip link accesibilidad -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="header" data-header>
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <!-- PONÉ TU LOGO EN assets/logo.png -->
         <img class="brand__logo" src="assets/logo.png" alt="Díaz Cardeilhac" />
         <div class="brand__text">
           <span class="brand__name">Díaz Cardeilhac</span>
@@ -48,7 +45,7 @@
 
   <main id="contenido">
     <!-- HERO -->
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero" style="--hero-bg: url('assets/hero/hero-01.jpeg');">
       <div class="container hero__inner">
         <div class="hero__content">
           <p class="eyebrow">Estudio de Ingeniería + Arquitectura</p>
@@ -81,7 +78,6 @@
           </div>
         </div>
 
-        <!-- Placeholder visual sin fotos -->
         <div class="hero__panel" aria-hidden="true">
           <div class="panel__card">
             <div class="panel__line"></div>
@@ -128,21 +124,19 @@
       </div>
     </section>
 
-    <!-- PROYECTOS (sin fotos por ahora) -->
+    <!-- PROYECTOS -->
     <section id="proyectos" class="section section--alt">
       <div class="container">
         <div class="section__head">
           <h2 class="section__title">Proyectos</h2>
-          <p class="section__subtitle">
-            Vamos a cargar fotos después. Por ahora dejamos la estructura lista.
-          </p>
+          <p class="section__subtitle">Residencial (selección). Próximamente interiores y obras comerciales.</p>
         </div>
 
         <div class="grid grid--3">
           <article class="project">
             <div class="project__badge">Residencial</div>
             <h3 class="project__title">Casa — (placeholder)</h3>
-            <p class="project__desc">Diseño + documentación + dirección de obra.</p>
+            <p class="project__desc">Proyecto y dirección de obra.</p>
             <div class="project__meta">
               <span>Año: —</span>
               <span>Ubicación: —</span>
@@ -150,14 +144,31 @@
             <a class="project__link" href="#contacto">Consultar</a>
           </article>
 
-          <article class="project">
-            <div class="project__badge">Comercial</div>
-            <h3 class="project__title">Local — (placeholder)</h3>
-            <p class="project__desc">Ejecución y coordinación de obra en tiempos exigentes.</p>
+          <!-- CARD CON SLIDER -->
+          <article class="project project--with-img">
+            <div class="project__img slider"
+                 data-slider
+                 data-folder="assets/proyectos/residencial"
+                 data-prefix="casa-"
+                 data-count="15"
+                 data-ext="jpeg"
+                 data-interval="1700"
+                 data-duration="520">
+              <div class="slider__track">
+                <img class="slider__img" src="assets/proyectos/residencial/casa-01.jpeg" alt="Residencial — Casa 01" loading="lazy">
+                <img class="slider__img" src="assets/proyectos/residencial/casa-02.jpeg" alt="" loading="lazy">
+              </div>
+            </div>
+
+            <div class="project__badge">Residencial</div>
+            <h3 class="project__title">Casa — (Nombre opcional)</h3>
+            <p class="project__desc">Proyecto y dirección de obra.</p>
+
             <div class="project__meta">
               <span>Año: —</span>
               <span>Ubicación: —</span>
             </div>
+
             <a class="project__link" href="#contacto">Consultar</a>
           </article>
 
@@ -193,9 +204,7 @@
           </div>
 
           <div class="quote">
-            <p>
-              “Una obra bien dirigida se nota en lo que no se ve: detalles, coordinación y decisiones a tiempo.”
-            </p>
+            <p>“Una obra bien dirigida se nota en lo que no se ve: detalles, coordinación y decisiones a tiempo.”</p>
             <span class="quote__sig">Díaz Cardeilhac — Ingeniería + Arquitectura</span>
           </div>
         </div>
@@ -207,7 +216,7 @@
       <div class="container">
         <div class="section__head">
           <h2 class="section__title">Clientes</h2>
-          <p class="section__subtitle">Cuando quieras, acá metemos logos y casos. Por ahora, placeholders.</p>
+          <p class="section__subtitle">Próximamente: casos y obra comercial.</p>
         </div>
 
         <div class="logos">
@@ -232,20 +241,19 @@
             <h3>Escribinos</h3>
             <p class="muted">WhatsApp recomendado para consultas rápidas.</p>
 
-            <!-- Cambiá el número cuando lo tengas -->
             <a class="btn btn--primary btn--full"
                href="https://wa.me/5490000000000?text=Hola%20D%C3%ADaz%20Cardeilhac,%20quiero%20hacer%20una%20consulta%20por%20un%20proyecto."
                target="_blank" rel="noopener">
               WhatsApp
             </a>
 
-            <!-- Cambiá mail cuando lo tengas -->
             <a class="btn btn--ghost btn--full" href="mailto:contacto@diazcardeilhac.com">
               Enviar email
             </a>
 
             <p class="small muted">
-              Instagram: <a href="https://www.instagram.com/diazcardeilhac_arq.obras/" target="_blank" rel="noopener">
+              Instagram:
+              <a href="https://www.instagram.com/diazcardeilhac_arq.obras/" target="_blank" rel="noopener">
                 @diazcardeilhac_arq.obras
               </a>
             </p>
