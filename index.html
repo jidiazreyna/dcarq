@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Sora:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   />
 
@@ -78,20 +78,42 @@
           </div>
         </div>
 
-        <div class="hero__panel" aria-hidden="true">
-          <div class="panel__card">
-            <div class="panel__line"></div>
-            <div class="panel__block"></div>
-            <div class="panel__block panel__block--short"></div>
-            <div class="panel__chips">
-              <span>Proyecto</span>
+        <div class="hero__panel">
+          <div class="panel__card panel__card--primary">
+            <div class="panel__eyebrow">Servicios clave</div>
+            <h3 class="panel__title">Proyecto, dirección y obra</h3>
+            <p class="panel__text">
+              Coordinación técnica, documentación completa y ejecución controlada.
+            </p>
+            <div class="panel__tags">
+              <span>Anteproyecto</span>
+              <span>Ejecutivo</span>
               <span>Dirección</span>
-              <span>Obra</span>
             </div>
           </div>
-          <div class="panel__card panel__card--ghost">
-            <div class="panel__block"></div>
-            <div class="panel__block panel__block--short"></div>
+
+          <div class="panel__card panel__card--steps">
+            <div class="panel__step">
+              <span class="panel__step-num">01</span>
+              <div>
+                <span class="panel__step-title">Relevamiento</span>
+                <span class="panel__step-text">Brief + visita al lugar</span>
+              </div>
+            </div>
+            <div class="panel__step">
+              <span class="panel__step-num">02</span>
+              <div>
+                <span class="panel__step-title">Propuesta</span>
+                <span class="panel__step-text">Diseño, costos y tiempos</span>
+              </div>
+            </div>
+            <div class="panel__step">
+              <span class="panel__step-num">03</span>
+              <div>
+                <span class="panel__step-title">Ejecución</span>
+                <span class="panel__step-text">Seguimiento y control</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,23 +151,12 @@
       <div class="container">
         <div class="section__head">
           <h2 class="section__title">Proyectos</h2>
-          <p class="section__subtitle">Residencial (selección). Próximamente interiores y obras comerciales.</p>
+          <p class="section__subtitle">Residencial destacado y obras comerciales seleccionadas.</p>
         </div>
 
         <div class="grid grid--3">
-          <article class="project">
-            <div class="project__badge">Residencial</div>
-            <h3 class="project__title">Casa — (placeholder)</h3>
-            <p class="project__desc">Proyecto y dirección de obra.</p>
-            <div class="project__meta">
-              <span>Año: —</span>
-              <span>Ubicación: —</span>
-            </div>
-            <a class="project__link" href="#contacto">Consultar</a>
-          </article>
-
           <!-- CARD CON SLIDER -->
-          <article class="project project--with-img">
+          <article class="project project--with-img project--featured">
             <div class="project__img slider"
                  data-slider
                  data-folder="assets/proyectos/residencial"
@@ -160,27 +171,44 @@
               </div>
             </div>
 
-            <div class="project__badge">Residencial</div>
-            <h3 class="project__title">Casa — (Nombre opcional)</h3>
-            <p class="project__desc">Proyecto y dirección de obra.</p>
+            <div class="project__body">
+              <div class="project__badge">Residencial</div>
+              <h3 class="project__title">Vivienda unifamiliar</h3>
+              <p class="project__desc">Proyecto, documentación y dirección de obra.</p>
 
-            <div class="project__meta">
-              <span>Año: —</span>
-              <span>Ubicación: —</span>
+              <div class="project__meta">
+                <span>Año: —</span>
+                <span>Ubicación: —</span>
+              </div>
+
+              <a class="project__link" href="#contacto">Consultar</a>
             </div>
-
-            <a class="project__link" href="#contacto">Consultar</a>
           </article>
 
-          <article class="project">
-            <div class="project__badge">Remodelación</div>
-            <h3 class="project__title">Reforma — (placeholder)</h3>
-            <p class="project__desc">Optimización de espacios, materiales y terminaciones.</p>
-            <div class="project__meta">
-              <span>Año: —</span>
-              <span>Ubicación: —</span>
+          <article class="project project--commercial">
+            <div class="project__body">
+              <div class="project__badge">Comercial</div>
+              <h3 class="project__title">Peñón del Águila</h3>
+              <p class="project__desc">Obra comercial con foco en experiencia de marca y operación.</p>
+              <div class="project__meta">
+                <span>Tipo: Local / Fábrica</span>
+                <span>Ubicación: —</span>
+              </div>
+              <a class="project__link" href="#contacto">Consultar</a>
             </div>
-            <a class="project__link" href="#contacto">Consultar</a>
+          </article>
+
+          <article class="project project--commercial">
+            <div class="project__body">
+              <div class="project__badge">Comercial</div>
+              <h3 class="project__title">Starbucks</h3>
+              <p class="project__desc">Implementación y coordinación de obra para locales.</p>
+              <div class="project__meta">
+                <span>Tipo: Retail</span>
+                <span>Ubicación: —</span>
+              </div>
+              <a class="project__link" href="#contacto">Consultar</a>
+            </div>
           </article>
         </div>
       </div>
