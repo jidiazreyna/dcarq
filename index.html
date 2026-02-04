@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Sora:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Work+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   />
 
@@ -53,8 +53,7 @@
             Proyectos residenciales y comerciales con <span class="accent">25 años</span> de experiencia.
           </h1>
           <p class="hero__lead">
-            Diseño, documentación y dirección de obra. Enfoque técnico, ejecución prolija y acompañamiento
-            de punta a punta.
+            Diseño, documentación y dirección de obra. Enfoque técnico y ejecución prolija.
           </p>
 
           <div class="hero__actions">
@@ -62,60 +61,9 @@
             <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
           </div>
 
-          <div class="hero__meta">
-            <div class="meta__item">
-              <span class="meta__kpi">+25</span>
-              <span class="meta__label">años</span>
-            </div>
-            <div class="meta__item">
-              <span class="meta__kpi">Residencial</span>
-              <span class="meta__label">casas &amp; reformas</span>
-            </div>
-            <div class="meta__item">
-              <span class="meta__kpi">Comercial</span>
-              <span class="meta__label">locales &amp; obra</span>
-            </div>
-          </div>
         </div>
 
-        <div class="hero__panel">
-          <div class="panel__card panel__card--primary">
-            <div class="panel__eyebrow">Servicios clave</div>
-            <h3 class="panel__title">Proyecto, dirección y obra</h3>
-            <p class="panel__text">
-              Coordinación técnica, documentación completa y ejecución controlada.
-            </p>
-            <div class="panel__tags">
-              <span>Anteproyecto</span>
-              <span>Ejecutivo</span>
-              <span>Dirección</span>
-            </div>
-          </div>
-
-          <div class="panel__card panel__card--steps">
-            <div class="panel__step">
-              <span class="panel__step-num">01</span>
-              <div>
-                <span class="panel__step-title">Relevamiento</span>
-                <span class="panel__step-text">Brief + visita al lugar</span>
-              </div>
-            </div>
-            <div class="panel__step">
-              <span class="panel__step-num">02</span>
-              <div>
-                <span class="panel__step-title">Propuesta</span>
-                <span class="panel__step-text">Diseño, costos y tiempos</span>
-              </div>
-            </div>
-            <div class="panel__step">
-              <span class="panel__step-num">03</span>
-              <div>
-                <span class="panel__step-title">Ejecución</span>
-                <span class="panel__step-text">Seguimiento y control</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="hero__panel" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -147,7 +95,7 @@
     </section>
 
     <!-- PROYECTOS -->
-    <section id="proyectos" class="section section--alt">
+    <section id="proyectos" class="section section--image" style="--section-bg: url('assets/proyectos/residencial/casa (1).jpeg');">
       <div class="container">
         <div class="section__head">
           <h2 class="section__title">Proyectos</h2>
@@ -157,19 +105,19 @@
         <div class="grid grid--3">
           <!-- CARD CON SLIDER -->
           <article class="project project--with-img project--featured">
-            <div class="project__img slider"
-                 data-slider
-                 data-folder="assets/proyectos/residencial"
-                 data-prefix="casa-"
-                 data-count="15"
-                 data-ext="jpeg"
-                 data-interval="1700"
-                 data-duration="520">
-              <div class="slider__track">
-                <img class="slider__img" src="assets/proyectos/residencial/casa-01.jpeg" alt="Residencial — Casa 01" loading="lazy">
-                <img class="slider__img" src="assets/proyectos/residencial/casa-02.jpeg" alt="" loading="lazy">
+            <a class="project__media-link" href="#proyecto-residencial" aria-label="Ver proyecto Residencial">
+              <div class="project__img slider"
+                   data-slider
+                   data-files="assets/proyectos/residencial/casa (1).jpeg|assets/proyectos/residencial/casa (10).jpeg|assets/proyectos/residencial/casa (11).jpeg|assets/proyectos/residencial/casa (12).jpeg|assets/proyectos/residencial/casa (13).jpeg|assets/proyectos/residencial/casa (14).jpeg|assets/proyectos/residencial/casa (15).jpeg|assets/proyectos/residencial/casa (16).jpg|assets/proyectos/residencial/casa (2).jpeg|assets/proyectos/residencial/casa (3).jpeg|assets/proyectos/residencial/casa (4).jpeg|assets/proyectos/residencial/casa (5).jpeg|assets/proyectos/residencial/casa (6).jpeg|assets/proyectos/residencial/casa (7).jpeg|assets/proyectos/residencial/casa (8).jpeg|assets/proyectos/residencial/casa (9).jpeg|assets/proyectos/residencial/casa.JPG"
+                   data-alt="Residencial"
+                   data-interval="1700"
+                   data-duration="520">
+                <div class="slider__track">
+                  <img class="slider__img" src="assets/proyectos/residencial/casa (1).jpeg" alt="Residencial — Foto 01" loading="lazy">
+                  <img class="slider__img" src="assets/proyectos/residencial/casa (2).jpeg" alt="" loading="lazy">
+                </div>
               </div>
-            </div>
+            </a>
 
             <div class="project__body">
               <div class="project__badge">Residencial</div>
@@ -181,11 +129,25 @@
                 <span>Ubicación: —</span>
               </div>
 
-              <a class="project__link" href="#contacto">Consultar</a>
+              <a class="project__link" href="#proyecto-residencial">Ver obra</a>
             </div>
           </article>
 
-          <article class="project project--commercial">
+          <article class="project project--with-img project--commercial">
+            <a class="project__media-link" href="#proyecto-penon" aria-label="Ver proyecto Peñón del Águila">
+              <div class="project__img slider"
+                   data-slider
+                   data-files="assets/proyectos/penon/pe (1).jpeg|assets/proyectos/penon/pe (10).jpeg|assets/proyectos/penon/pe (11).jpeg|assets/proyectos/penon/pe (12).jpeg|assets/proyectos/penon/pe (13).jpeg|assets/proyectos/penon/pe (14).jpeg|assets/proyectos/penon/pe (15).jpeg|assets/proyectos/penon/pe (16).jpeg|assets/proyectos/penon/pe (17).jpeg|assets/proyectos/penon/pe (18).jpeg|assets/proyectos/penon/pe (19).jpeg|assets/proyectos/penon/pe (2).jpeg|assets/proyectos/penon/pe (20).jpeg|assets/proyectos/penon/pe (21).jpeg|assets/proyectos/penon/pe (22).jpeg|assets/proyectos/penon/pe (23).jpeg|assets/proyectos/penon/pe (24).jpeg|assets/proyectos/penon/pe (25).jpeg|assets/proyectos/penon/pe (26).jpeg|assets/proyectos/penon/pe (27).jpeg|assets/proyectos/penon/pe (28).jpeg|assets/proyectos/penon/pe (3).jpeg|assets/proyectos/penon/pe (4).jpeg|assets/proyectos/penon/pe (5).jpeg|assets/proyectos/penon/pe (6).jpeg|assets/proyectos/penon/pe (7).jpeg|assets/proyectos/penon/pe (8).jpeg|assets/proyectos/penon/pe (9).jpeg"
+                   data-alt="Peñón del Águila"
+                   data-interval="1900"
+                   data-duration="520">
+                <div class="slider__track">
+                  <img class="slider__img" src="assets/proyectos/penon/pe (1).jpeg" alt="Peñón del Águila — Foto 01" loading="lazy">
+                  <img class="slider__img" src="assets/proyectos/penon/pe (2).jpeg" alt="" loading="lazy">
+                </div>
+              </div>
+            </a>
+
             <div class="project__body">
               <div class="project__badge">Comercial</div>
               <h3 class="project__title">Peñón del Águila</h3>
@@ -194,11 +156,25 @@
                 <span>Tipo: Local / Fábrica</span>
                 <span>Ubicación: —</span>
               </div>
-              <a class="project__link" href="#contacto">Consultar</a>
+              <a class="project__link" href="#proyecto-penon">Ver obra</a>
             </div>
           </article>
 
-          <article class="project project--commercial">
+          <article class="project project--with-img project--commercial">
+            <a class="project__media-link" href="#proyecto-starbucks" aria-label="Ver proyecto Starbucks">
+              <div class="project__img slider"
+                   data-slider
+                   data-files="assets/proyectos/starbucks/star (1).JPG|assets/proyectos/starbucks/star (10).JPG|assets/proyectos/starbucks/star (11).JPG|assets/proyectos/starbucks/star (12).JPG|assets/proyectos/starbucks/star (13).JPG|assets/proyectos/starbucks/star (14).JPG|assets/proyectos/starbucks/star (15).JPG|assets/proyectos/starbucks/star (16).JPG|assets/proyectos/starbucks/star (17).JPG|assets/proyectos/starbucks/star (18).JPG|assets/proyectos/starbucks/star (19).JPG|assets/proyectos/starbucks/star (2).jpg|assets/proyectos/starbucks/star (20).JPG|assets/proyectos/starbucks/star (21).JPG|assets/proyectos/starbucks/star (22).JPG|assets/proyectos/starbucks/star (23).JPG|assets/proyectos/starbucks/star (24).JPG|assets/proyectos/starbucks/star (25).JPG|assets/proyectos/starbucks/star (26).JPG|assets/proyectos/starbucks/star (27).JPG|assets/proyectos/starbucks/star (28).JPG|assets/proyectos/starbucks/star (29).JPG|assets/proyectos/starbucks/star (3).jpg|assets/proyectos/starbucks/star (30).JPG|assets/proyectos/starbucks/star (4).jpg|assets/proyectos/starbucks/star (5).jpg|assets/proyectos/starbucks/star (6).jpg|assets/proyectos/starbucks/star (7).jpg|assets/proyectos/starbucks/star (8).JPG|assets/proyectos/starbucks/star (9).JPG"
+                   data-alt="Starbucks"
+                   data-interval="1900"
+                   data-duration="520">
+                <div class="slider__track">
+                  <img class="slider__img" src="assets/proyectos/starbucks/star (1).JPG" alt="Starbucks — Foto 01" loading="lazy">
+                  <img class="slider__img" src="assets/proyectos/starbucks/star (2).jpg" alt="" loading="lazy">
+                </div>
+              </div>
+            </a>
+
             <div class="project__body">
               <div class="project__badge">Comercial</div>
               <h3 class="project__title">Starbucks</h3>
@@ -207,9 +183,188 @@
                 <span>Tipo: Retail</span>
                 <span>Ubicación: —</span>
               </div>
-              <a class="project__link" href="#contacto">Consultar</a>
+              <a class="project__link" href="#proyecto-starbucks">Ver obra</a>
             </div>
           </article>
+
+          <article class="project project--with-img project--commercial">
+            <a class="project__media-link" href="#proyecto-patagonia" aria-label="Ver proyecto Patagonia">
+              <div class="project__img slider"
+                   data-slider
+                   data-files="assets/proyectos/patagonia/pa (1).jpeg|assets/proyectos/patagonia/pa (10).jpeg|assets/proyectos/patagonia/pa (11).jpeg|assets/proyectos/patagonia/pa (12).jpeg|assets/proyectos/patagonia/pa (13).jpeg|assets/proyectos/patagonia/pa (14).jpeg|assets/proyectos/patagonia/pa (15).jpeg|assets/proyectos/patagonia/pa (16).jpeg|assets/proyectos/patagonia/pa (17).jpeg|assets/proyectos/patagonia/pa (18).jpeg|assets/proyectos/patagonia/pa (19).jpeg|assets/proyectos/patagonia/pa (2).jpeg|assets/proyectos/patagonia/pa (20).jpeg|assets/proyectos/patagonia/pa (21).jpeg|assets/proyectos/patagonia/pa (22).jpeg|assets/proyectos/patagonia/pa (23).jpeg|assets/proyectos/patagonia/pa (24).jpeg|assets/proyectos/patagonia/pa (25).jpeg|assets/proyectos/patagonia/pa (26).jpeg|assets/proyectos/patagonia/pa (27).jpeg|assets/proyectos/patagonia/pa (28).jpeg|assets/proyectos/patagonia/pa (29).jpeg|assets/proyectos/patagonia/pa (3).jpeg|assets/proyectos/patagonia/pa (30).jpeg|assets/proyectos/patagonia/pa (31).jpeg|assets/proyectos/patagonia/pa (32).jpeg|assets/proyectos/patagonia/pa (33).jpeg|assets/proyectos/patagonia/pa (34).jpeg|assets/proyectos/patagonia/pa (35).jpeg|assets/proyectos/patagonia/pa (36).jpeg|assets/proyectos/patagonia/pa (37).jpeg|assets/proyectos/patagonia/pa (38).jpeg|assets/proyectos/patagonia/pa (39).jpeg|assets/proyectos/patagonia/pa (4).jpeg|assets/proyectos/patagonia/pa (40).jpeg|assets/proyectos/patagonia/pa (41).jpeg|assets/proyectos/patagonia/pa (42).jpeg|assets/proyectos/patagonia/pa (43).jpeg|assets/proyectos/patagonia/pa (44).jpeg|assets/proyectos/patagonia/pa (45).jpeg|assets/proyectos/patagonia/pa (46).jpeg|assets/proyectos/patagonia/pa (47).jpeg|assets/proyectos/patagonia/pa (48).jpeg|assets/proyectos/patagonia/pa (49).jpeg|assets/proyectos/patagonia/pa (5).jpeg|assets/proyectos/patagonia/pa (50).jpeg|assets/proyectos/patagonia/pa (51).jpeg|assets/proyectos/patagonia/pa (52).jpeg|assets/proyectos/patagonia/pa (53).jpeg|assets/proyectos/patagonia/pa (54).jpeg|assets/proyectos/patagonia/pa (55).jpeg|assets/proyectos/patagonia/pa (56).jpeg|assets/proyectos/patagonia/pa (57).jpeg|assets/proyectos/patagonia/pa (58).jpeg|assets/proyectos/patagonia/pa (59).jpeg|assets/proyectos/patagonia/pa (6).jpeg|assets/proyectos/patagonia/pa (60).jpeg|assets/proyectos/patagonia/pa (7).jpeg|assets/proyectos/patagonia/pa (8).jpeg|assets/proyectos/patagonia/pa (9).jpeg"
+                   data-alt="Patagonia"
+                   data-interval="1900"
+                   data-duration="520">
+                <div class="slider__track">
+                  <img class="slider__img" src="assets/proyectos/patagonia/pa (1).jpeg" alt="Patagonia — Foto 01" loading="lazy">
+                  <img class="slider__img" src="assets/proyectos/patagonia/pa (2).jpeg" alt="" loading="lazy">
+                </div>
+              </div>
+            </a>
+
+            <div class="project__body">
+              <div class="project__badge">Comercial</div>
+              <h3 class="project__title">Patagonia</h3>
+              <p class="project__desc">Desarrollo y coordinación de obra para espacios de marca.</p>
+              <div class="project__meta">
+                <span>Tipo: Retail</span>
+                <span>Ubicación: —</span>
+              </div>
+              <a class="project__link" href="#proyecto-patagonia">Ver obra</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-detail" id="proyecto-residencial">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Residencial · Vivienda unifamiliar</h2>
+          <p class="section__subtitle">Proyecto integral con foco en luz natural, materialidad y eficiencia de obra.</p>
+        </div>
+
+        <div class="project-detail__grid">
+          <div class="project-detail__media">
+            <div class="project__img slider"
+                 data-slider
+                 data-files="assets/proyectos/residencial/casa (1).jpeg|assets/proyectos/residencial/casa (10).jpeg|assets/proyectos/residencial/casa (11).jpeg|assets/proyectos/residencial/casa (12).jpeg|assets/proyectos/residencial/casa (13).jpeg|assets/proyectos/residencial/casa (14).jpeg|assets/proyectos/residencial/casa (15).jpeg|assets/proyectos/residencial/casa (16).jpg|assets/proyectos/residencial/casa (2).jpeg|assets/proyectos/residencial/casa (3).jpeg|assets/proyectos/residencial/casa (4).jpeg|assets/proyectos/residencial/casa (5).jpeg|assets/proyectos/residencial/casa (6).jpeg|assets/proyectos/residencial/casa (7).jpeg|assets/proyectos/residencial/casa (8).jpeg|assets/proyectos/residencial/casa (9).jpeg|assets/proyectos/residencial/casa.JPG"
+                 data-alt="Residencial"
+                 data-interval="2000"
+                 data-duration="520">
+              <div class="slider__track">
+                <img class="slider__img" src="assets/proyectos/residencial/casa (1).jpeg" alt="Residencial — Foto 01" loading="lazy">
+                <img class="slider__img" src="assets/proyectos/residencial/casa (2).jpeg" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="project-detail__content">
+            <div class="project__badge">Residencial</div>
+            <h3 class="project-detail__title">Vivienda unifamiliar</h3>
+            <p class="project-detail__lead">
+              Resolución arquitectónica y técnica completa: anteproyecto, documentación y dirección de obra.
+            </p>
+            <ul class="project-detail__list">
+              <li>Programa flexible con integración interior–exterior.</li>
+              <li>Selección de materiales de bajo mantenimiento.</li>
+              <li>Planificación y seguimiento de obra por etapas.</li>
+            </ul>
+            <a class="btn btn--primary" href="#contacto">Solicitar visita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-detail section--alt" id="proyecto-penon">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Peñón del Águila</h2>
+          <p class="section__subtitle">Obra comercial con foco en marca, operación y flujos de atención.</p>
+        </div>
+
+        <div class="project-detail__grid">
+          <div class="project-detail__media">
+            <div class="project__img slider"
+                 data-slider
+                 data-files="assets/proyectos/penon/pe (1).jpeg|assets/proyectos/penon/pe (10).jpeg|assets/proyectos/penon/pe (11).jpeg|assets/proyectos/penon/pe (12).jpeg|assets/proyectos/penon/pe (13).jpeg|assets/proyectos/penon/pe (14).jpeg|assets/proyectos/penon/pe (15).jpeg|assets/proyectos/penon/pe (16).jpeg|assets/proyectos/penon/pe (17).jpeg|assets/proyectos/penon/pe (18).jpeg|assets/proyectos/penon/pe (19).jpeg|assets/proyectos/penon/pe (2).jpeg|assets/proyectos/penon/pe (20).jpeg|assets/proyectos/penon/pe (21).jpeg|assets/proyectos/penon/pe (22).jpeg|assets/proyectos/penon/pe (23).jpeg|assets/proyectos/penon/pe (24).jpeg|assets/proyectos/penon/pe (25).jpeg|assets/proyectos/penon/pe (26).jpeg|assets/proyectos/penon/pe (27).jpeg|assets/proyectos/penon/pe (28).jpeg|assets/proyectos/penon/pe (3).jpeg|assets/proyectos/penon/pe (4).jpeg|assets/proyectos/penon/pe (5).jpeg|assets/proyectos/penon/pe (6).jpeg|assets/proyectos/penon/pe (7).jpeg|assets/proyectos/penon/pe (8).jpeg|assets/proyectos/penon/pe (9).jpeg"
+                 data-alt="Peñón del Águila"
+                 data-interval="2100"
+                 data-duration="520">
+              <div class="slider__track">
+                <img class="slider__img" src="assets/proyectos/penon/pe (1).jpeg" alt="Peñón del Águila — Foto 01" loading="lazy">
+                <img class="slider__img" src="assets/proyectos/penon/pe (2).jpeg" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="project-detail__content">
+            <div class="project__badge">Comercial</div>
+            <h3 class="project-detail__title">Peñón del Águila</h3>
+            <p class="project-detail__lead">
+              Diseño y ejecución con criterio de marca, confort del cliente y eficiencia operativa.
+            </p>
+            <ul class="project-detail__list">
+              <li>Coordinación de rubros y proveedores.</li>
+              <li>Materiales resistentes al uso intensivo.</li>
+              <li>Optimización de circulaciones y atención.</li>
+            </ul>
+            <a class="btn btn--primary" href="#contacto">Agendar visita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-detail" id="proyecto-starbucks">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Starbucks</h2>
+          <p class="section__subtitle">Implementación de locales y coordinación técnica con estándares de marca.</p>
+        </div>
+
+        <div class="project-detail__grid">
+          <div class="project-detail__media">
+            <div class="project__img slider"
+                 data-slider
+                 data-files="assets/proyectos/starbucks/star (1).JPG|assets/proyectos/starbucks/star (10).JPG|assets/proyectos/starbucks/star (11).JPG|assets/proyectos/starbucks/star (12).JPG|assets/proyectos/starbucks/star (13).JPG|assets/proyectos/starbucks/star (14).JPG|assets/proyectos/starbucks/star (15).JPG|assets/proyectos/starbucks/star (16).JPG|assets/proyectos/starbucks/star (17).JPG|assets/proyectos/starbucks/star (18).JPG|assets/proyectos/starbucks/star (19).JPG|assets/proyectos/starbucks/star (2).jpg|assets/proyectos/starbucks/star (20).JPG|assets/proyectos/starbucks/star (21).JPG|assets/proyectos/starbucks/star (22).JPG|assets/proyectos/starbucks/star (23).JPG|assets/proyectos/starbucks/star (24).JPG|assets/proyectos/starbucks/star (25).JPG|assets/proyectos/starbucks/star (26).JPG|assets/proyectos/starbucks/star (27).JPG|assets/proyectos/starbucks/star (28).JPG|assets/proyectos/starbucks/star (29).JPG|assets/proyectos/starbucks/star (3).jpg|assets/proyectos/starbucks/star (30).JPG|assets/proyectos/starbucks/star (4).jpg|assets/proyectos/starbucks/star (5).jpg|assets/proyectos/starbucks/star (6).jpg|assets/proyectos/starbucks/star (7).jpg|assets/proyectos/starbucks/star (8).JPG|assets/proyectos/starbucks/star (9).JPG"
+                 data-alt="Starbucks"
+                 data-interval="2100"
+                 data-duration="520">
+              <div class="slider__track">
+                <img class="slider__img" src="assets/proyectos/starbucks/star (1).JPG" alt="Starbucks — Foto 01" loading="lazy">
+                <img class="slider__img" src="assets/proyectos/starbucks/star (2).jpg" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="project-detail__content">
+            <div class="project__badge">Comercial</div>
+            <h3 class="project-detail__title">Starbucks</h3>
+            <p class="project-detail__lead">
+              Coordinación integral de obra con foco en plazos, calidad y experiencia del cliente.
+            </p>
+            <ul class="project-detail__list">
+              <li>Estandarización de terminaciones y montaje.</li>
+              <li>Supervisión técnica y control de calidad.</li>
+              <li>Coordinación con proveedores y marca.</li>
+            </ul>
+            <a class="btn btn--primary" href="#contacto">Coordinar reunión</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-detail section--alt" id="proyecto-patagonia">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Patagonia</h2>
+          <p class="section__subtitle">Desarrollo de espacios retail con foco en durabilidad y experiencia.</p>
+        </div>
+
+        <div class="project-detail__grid">
+          <div class="project-detail__media">
+            <div class="project__img slider"
+                 data-slider
+                 data-files="assets/proyectos/patagonia/pa (1).jpeg|assets/proyectos/patagonia/pa (10).jpeg|assets/proyectos/patagonia/pa (11).jpeg|assets/proyectos/patagonia/pa (12).jpeg|assets/proyectos/patagonia/pa (13).jpeg|assets/proyectos/patagonia/pa (14).jpeg|assets/proyectos/patagonia/pa (15).jpeg|assets/proyectos/patagonia/pa (16).jpeg|assets/proyectos/patagonia/pa (17).jpeg|assets/proyectos/patagonia/pa (18).jpeg|assets/proyectos/patagonia/pa (19).jpeg|assets/proyectos/patagonia/pa (2).jpeg|assets/proyectos/patagonia/pa (20).jpeg|assets/proyectos/patagonia/pa (21).jpeg|assets/proyectos/patagonia/pa (22).jpeg|assets/proyectos/patagonia/pa (23).jpeg|assets/proyectos/patagonia/pa (24).jpeg|assets/proyectos/patagonia/pa (25).jpeg|assets/proyectos/patagonia/pa (26).jpeg|assets/proyectos/patagonia/pa (27).jpeg|assets/proyectos/patagonia/pa (28).jpeg|assets/proyectos/patagonia/pa (29).jpeg|assets/proyectos/patagonia/pa (3).jpeg|assets/proyectos/patagonia/pa (30).jpeg|assets/proyectos/patagonia/pa (31).jpeg|assets/proyectos/patagonia/pa (32).jpeg|assets/proyectos/patagonia/pa (33).jpeg|assets/proyectos/patagonia/pa (34).jpeg|assets/proyectos/patagonia/pa (35).jpeg|assets/proyectos/patagonia/pa (36).jpeg|assets/proyectos/patagonia/pa (37).jpeg|assets/proyectos/patagonia/pa (38).jpeg|assets/proyectos/patagonia/pa (39).jpeg|assets/proyectos/patagonia/pa (4).jpeg|assets/proyectos/patagonia/pa (40).jpeg|assets/proyectos/patagonia/pa (41).jpeg|assets/proyectos/patagonia/pa (42).jpeg|assets/proyectos/patagonia/pa (43).jpeg|assets/proyectos/patagonia/pa (44).jpeg|assets/proyectos/patagonia/pa (45).jpeg|assets/proyectos/patagonia/pa (46).jpeg|assets/proyectos/patagonia/pa (47).jpeg|assets/proyectos/patagonia/pa (48).jpeg|assets/proyectos/patagonia/pa (49).jpeg|assets/proyectos/patagonia/pa (5).jpeg|assets/proyectos/patagonia/pa (50).jpeg|assets/proyectos/patagonia/pa (51).jpeg|assets/proyectos/patagonia/pa (52).jpeg|assets/proyectos/patagonia/pa (53).jpeg|assets/proyectos/patagonia/pa (54).jpeg|assets/proyectos/patagonia/pa (55).jpeg|assets/proyectos/patagonia/pa (56).jpeg|assets/proyectos/patagonia/pa (57).jpeg|assets/proyectos/patagonia/pa (58).jpeg|assets/proyectos/patagonia/pa (59).jpeg|assets/proyectos/patagonia/pa (6).jpeg|assets/proyectos/patagonia/pa (60).jpeg|assets/proyectos/patagonia/pa (7).jpeg|assets/proyectos/patagonia/pa (8).jpeg|assets/proyectos/patagonia/pa (9).jpeg"
+                 data-alt="Patagonia"
+                 data-interval="2100"
+                 data-duration="520">
+              <div class="slider__track">
+                <img class="slider__img" src="assets/proyectos/patagonia/pa (1).jpeg" alt="Patagonia — Foto 01" loading="lazy">
+                <img class="slider__img" src="assets/proyectos/patagonia/pa (2).jpeg" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="project-detail__content">
+            <div class="project__badge">Comercial</div>
+            <h3 class="project-detail__title">Patagonia</h3>
+            <p class="project-detail__lead">
+              Propuesta espacial robusta y eficiente, pensada para alto tránsito.
+            </p>
+            <ul class="project-detail__list">
+              <li>Especificación de materiales de alto desempeño.</li>
+              <li>Detalle constructivo y control de ejecución.</li>
+              <li>Coordinación técnica con proveedores.</li>
+            </ul>
+            <a class="btn btn--primary" href="#contacto">Quiero una propuesta</a>
+          </div>
         </div>
       </div>
     </section>

@@ -56,18 +56,25 @@
     const imgA = imgs[0];
     const imgB = imgs[1];
 
+    const filesRaw = slider.dataset.files || "";
+    const files = filesRaw
+      ? filesRaw.split("|").map((item) => item.trim()).filter(Boolean)
+      : [];
+    const useFiles = files.length > 0;
     const folder = slider.dataset.folder || "assets/proyectos/residencial";
     const prefix = slider.dataset.prefix || "casa-";
-    const count = parseInt(slider.dataset.count || "15", 10);
+    const count = useFiles ? files.length : parseInt(slider.dataset.count || "15", 10);
     const ext = slider.dataset.ext || "jpeg";
     const interval = parseInt(slider.dataset.interval || "1700", 10);
     const duration = parseInt(slider.dataset.duration || "520", 10);
+    const altPrefix = slider.dataset.alt || "Residencial";
 
     // Asegura que la transición exista y sea la misma que el data-duration
     track.style.transitionDuration = `${duration}ms`;
 
     const pad2 = (n) => String(n).padStart(2, "0");
-    const srcFor = (i) => `${folder}/${prefix}${pad2(i)}.${ext}`;
+    const srcFor = (i) => (useFiles ? files[i - 1] : `${folder}/${prefix}${pad2(i)}.${ext}`);
+    const altFor = (i) => `${altPrefix} \u2014 Foto ${pad2(i)}`;
 
     let index = 1;      // imgA muestra index
     let timer = null;
@@ -79,7 +86,7 @@
 
     // set inicial (por si alguien cambió el HTML)
     imgA.src = srcFor(1);
-    imgA.alt = `Residencial — Casa ${pad2(1)}`;
+    imgA.alt = altFor(1);
     imgB.src = srcFor(2);
 
     // Precarga liviana (primeras)
@@ -94,7 +101,7 @@
 
       const next = nextIndex(index);
       imgB.src = srcFor(next);
-      imgB.alt = `Residencial — Casa ${pad2(next)}`;
+      imgB.alt = altFor(next);
 
       // 1) arrancar desde 0
       track.style.transitionDuration = `${duration}ms`;
@@ -148,4 +155,14 @@
 
     start();
   });
+
+  // Header: fondo sólido al hacer scroll
+  const header = document.querySelector("[data-header]");
+  if (header) {
+    const setHeaderState = () => {
+      header.classList.toggle("is-solid", window.scrollY > 40);
+    };
+    setHeaderState();
+    window.addEventListener("scroll", setHeaderState, { passive: true });
+  }
 })();
