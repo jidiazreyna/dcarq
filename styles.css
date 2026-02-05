@@ -95,19 +95,27 @@ a:hover{ text-decoration: underline; }
 .brand{
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 220px;
+  gap: 0;
+  min-width: auto;
+  overflow: visible;
 }
 .brand__logo{
   width: 56px;
   height: 56px;
   object-fit: contain;
-  border-radius: 12px;
-  background: rgba(0,0,0,.05);
-  border: 1px solid var(--line);
-  padding: 6px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  transform: translate(-48px, 6px) scale(6.4);
+  transform-origin: left center;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.45));
+  image-rendering: -webkit-optimize-contrast;
 }
-.brand__text{ display: grid; gap: 2px; }
+.header.is-solid .brand__logo{
+  filter: invert(1) brightness(.15) contrast(1.15);
+}
+.brand__text{ display: none; }
 .brand__name{ font-weight: 600; letter-spacing: .2px; }
 .brand__tag{
   font-size: 14px;
@@ -183,7 +191,7 @@ a:hover{ text-decoration: underline; }
   background-position: center, center, center;
   background-repeat: no-repeat;
   opacity: 1;                  /* intensidad de la foto de fondo */
-  filter: saturate(1.08) contrast(1.08) brightness(1.12) blur(2px);
+  filter: none;
   transform: scale(1.02);
 }
 
@@ -193,8 +201,8 @@ a:hover{ text-decoration: underline; }
   position:absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(25,25,25,.18) 0%, rgba(25,25,25,.10) 55%, rgba(25,25,25,.06) 100%),
-    linear-gradient(180deg, rgba(20,20,20,.10) 0%, rgba(20,20,20,.26) 100%);
+    linear-gradient(90deg, rgba(100,100,100,.34) 0%, rgba(100,100,100,.22) 55%, rgba(100,100,100,.15) 100%),
+    linear-gradient(180deg, rgba(100,100,100,.20) 0%, rgba(100,100,100,.36) 100%);
   pointer-events:none;
 }
 
@@ -756,18 +764,38 @@ a:hover{ text-decoration: underline; }
 /* Logos */
 .logos{
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
   margin-top: 18px;
+  align-items: center;
 }
-.logo-pill{
-  text-align: center;
-  padding: 14px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: rgba(0,0,0,.75);
-  font-size: 13px;
+.logo-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+}
+.logo-img{
+  width: 100%;
+  max-width: 260px;
+  max-height: 90px;
+  object-fit: contain;
+  filter: saturate(1.02) contrast(1.02);
+}
+.logo-img--starbucks{
+  max-width: 110px;
+  max-height: 110px;
+}
+.logo-img--penon{
+  max-width: 170px;
+  max-height: 100px;
+}
+.logo-img--patagonia{
+  max-width: 260px;
+  max-height: 90px;
 }
 
 /* Contact */
